@@ -5,6 +5,12 @@
 struct Type {
 	//type Type = NULL;
 	typedef intmax_t Type;
+	//type T = Type;
+};
+
+struct TypeAndValue {
+	Type T;
+	T.Type Value;
 };
 
 struct Variant {
@@ -26,7 +32,8 @@ bool Add(Variant& In, Type& T) {
 struct Object {
 	//type O = NULL;
 	typedef intmax_t O;
-	O Value = {0,};
+	//type T = O;
+	T Value = {0,};
 };
 
 struct KITAHeadOne {
